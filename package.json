@@ -1,0 +1,30 @@
+{
+  
+  "name": "alex_nextjs",
+  "description": "Site personnel nextjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^12.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+      "build": "next build && next export",
+      "start": "next start",
+      "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandre34000/perso_nextjs.git"
+  },
+  "author": "Alexandre Charlier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandre34000/perso_nextjs/issues"
+  },
+  "homepage": "https://github.com/alexandre34000/perso_nextjs#readme"
+}
