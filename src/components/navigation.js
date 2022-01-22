@@ -1,41 +1,26 @@
+import Link from 'next/link';
+import styles from './Navigation.module.css';
+import routes from '@helpers/routes';
+import Header404 from '@components/Header404';
 
 
-export default function navigation(){
+export default function Navigation() {
 
-return(
-    <nav className="ncn-menu-c" data-close-click-outside-curtain>
-    <a
-      href="#"
-      className="ncn-menulink ncn-menulink-community"
-    >
-      Community
-    </a>
-    <a
-      href="#"
-      className="ncn-menulink ncn-menulink-forums"
-    >
-      Support Forums
-    </a>
-    <a
-      href="#"
-      className="ncn-menulink ncn-menulink-explorers"
-    >
-      Learning Platform
-    </a>
-    <a
-      href="#"
-      className="ncn-menulink ncn-menulink-podcast"
-      aria-current="page"
-    >
-      Podcast
-    </a>
-    <a
-      href="https://swag.netlify.com/"
-      className="ncn-menulink ncn-menulink-swag"
-    >
-      Swag
-    </a>
-  </nav>  
-)
+  return (
+    <nav className={styles.menu} data-close-click-outside-curtain>
+      <Link href="#" >
+        <a className={styles['menulink-i']}>{routes.home.title}</a>
+      </Link>
+      <Link href="#" >
+      <a className={styles.menulink}>
+      {routes.blog.title}</a>
+      </Link>
+      <Link href="#" >
+      <a className={styles.menulink}>
+        Sign in
+        </a>
+      </Link>
+    </nav>
+  )
 
 }

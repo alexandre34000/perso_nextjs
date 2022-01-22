@@ -6,6 +6,7 @@
         "@util/*": ["src/util/*"],
         "@public/*": ["public/*"],
         "@styles/*": ["src/styles/*"],
+        "@helpers/*": ["src/helpers/*"],
         "@node_modules/*": ["node_modules/*"]
       }
     }

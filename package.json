@@ -1,5 +1,4 @@
 {
-  
   "name": "alex_nextjs",
   "description": "Site personnel nextjs",
   "version": "1.0.0",
@@ -13,9 +12,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
-      "build": "next build && next export",
-      "start": "next start",
-      "lint": "next lint"
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",

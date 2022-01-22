@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import Layout from '@components/Layout';
+import Navigation from '@components/Navigation'
 
 function HomePage(props) {
 
     const pageMeta = {
-        title: 'Jamstack Explorers — Free Jamstack Courses',
-        description:'Take free Jamstack courses and complete missions about React, Vue, Angular, Next.js and more! See your progress and earn rewards as you go. Get started today!',
+        title: 'Alexandre Charlier développeur web, react angular next redux',
+        description:'Découvrez mon site pour la présentation de mon blog et de mon profil',
        /*  image:
           'https://images.unsplash.com/photo-1536697246787-1f7ae568d89a?q=85&fm=jpg&fit=crop&w=1600&h=800', */
       };
@@ -14,17 +15,18 @@ function HomePage(props) {
 
     return (
       
-     <Layout navtheme="light" pageMeta={pageMeta}>
-     
-           <div>Welcome to Next.js!</div>
+      <Layout navtheme="light" pageMeta={pageMeta}>
+<div>page Home</div>
+
+          {/*  <div>Welcome to Next.js!</div>
            <Link href="/posts/first"><a>First Post</a></Link>
           
            <Link href="/posts/second"><a>second Post</a></Link>
-           <br/>
-           </Layout>
-     
+           <br/> */}
+          
+     </Layout>
 
-     )
+     );
  }
 
  

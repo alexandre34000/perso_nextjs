@@ -1,4 +1,4 @@
-import styles from '@styles/components/Header404.module.css';
+import styles from './Header404.module.css';
 import Link from 'next/link';
 
 export default function Header404() {

@@ -1,9 +1,9 @@
 import SEO from '@components/SEO';
-//import Navigation from '@components/Navigation';
-//import Footer from '@components/Footer';
-import Navigation from '@components/navigation';
 
-import styles from '../styles/Components/Layout.module.css';
+//import Footer from '@components/Footer';
+import Navigation from '@components/Navigation';
+
+import styles from './Layout.module.css';
 
 export default function Layout({ children, navtheme, pageMeta }) {
   return (

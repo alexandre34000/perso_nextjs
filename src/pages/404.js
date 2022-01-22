@@ -4,8 +4,8 @@ import Layout from '@components/Layout';
 
 const page404 = () => {
   const pageMeta = {
-    title: 'Oops! You found a missing page! - Jamstack Explorers',
-    description: 'Oops! It looks like this page is lost in space somewhere!',
+    title: "Oops! cette page n'existe pas",
+    description: "Oops! on accede à cette page si l'on est perdu!",
     url: `${SITE_DOMAIN}/404`,
   };
 
