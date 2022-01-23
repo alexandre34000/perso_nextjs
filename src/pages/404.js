@@ -10,7 +10,7 @@ const page404 = () => {
   };
 
   return (
-    <Layout navtheme="dark" pageMeta={pageMeta}>
+    <Layout  pageMeta={pageMeta}>
       <Header404 />
     </Layout>
   );

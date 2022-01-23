@@ -1,11 +1,9 @@
 import SEO from '@components/SEO';
-
-//import Footer from '@components/Footer';
 import Navigation from '@components/Navigation';
-
 import styles from './Layout.module.css';
 
-export default function Layout({ children, navtheme, pageMeta }) {
+export default function Layout({ children, pageMeta }) {
+
   return (
     <div className={styles.container}>
       <SEO
@@ -15,9 +13,7 @@ export default function Layout({ children, navtheme, pageMeta }) {
         image={pageMeta.image}
         creator={pageMeta.creator}
       />
-      <header>
-      <Navigation theme={navtheme} />
-      </header>
+      <Navigation />
       <main>{children}</main>
      {/*  <Footer className={styles.footer} /> */}
     </div>

@@ -1,23 +1,38 @@
 
 
-const routes ={
-    home:{
+const publicRoutes = [
+    [
+        {
+            title: "commencer",
+            path: "/commencer"
+        },
+        {
+            title: "tourdumonde",
+            path: "/tourdumonde"
+        },
+        {
+            title: "realiser",
+            path: "/realiser"
+        }
+        ],
+    [
+    {
         title: "home",
-        path:"/"
+        path: "/"
     },
-    profil:{
+    ],
+    [
+    {
         title: "profil",
         path: "/profil"
     },
-    login :{
+    {
         title: "login",
         path: "/login"
-    },
-    blog:{
-        title: "blog",
-        path: "/blog"
     }
-}
+    ]
+    
+];
 
-export default routes
+export { publicRoutes }
 

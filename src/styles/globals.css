@@ -3,11 +3,20 @@
    --color-gray: #444;
    --color-black: #111;
    --color-primary: teal;
-   --color-white: #fff;
+   --color-white: #ffffff;
    --color-pink: #e94e93;
    --color-deeppink: #d04ce4;
    --color-purple: #9f44df;
    --color-deeppurple: #7b3bea;
+
+  
+--color-grey-dark-light :#35353590;
+--color-grey-light:#eaeaea;
+--color-grey-dark-dark :#242A35;
+--color-grey70:#35353599;
+--color-grey-dark50 :#242A35E1;
+
+
  
    /* typography */
    --color-text-base: var(--color-gray);
@@ -22,6 +31,34 @@
    --font-weight-base: 400;
    --line-height-base: 1.45;
    --line-height-heading: 1.1;
+
+
+   /* breaks points*/
+   --mobile: 320px;
+   --mobile-landscape: 576px;
+    --tablette: 768px;
+    --desktop: 1199px;
+
+
+    /*--font-familly--*/
+--font-title :'shrikhand';
+--font-texte :'roboto';
+--font-oblique : 'Pinyon Script';
+--font-alex :'Parisienne';
+--font-logo: 'Miss Fajardose';
+
+/*--font--*/
+--font-exsm: 1.5rem;
+--font-sm: 1.6rem;
+--font-md: 1.8rem;
+--font-lg: 2.3rem;
+--font-exlg: 2.5rem;
+--font-smbig: 3rem;
+--font-mdbig :4rem;
+--font-exbig: 5rem;
+
+--font-sm: 16px;
+
  }
 
 
@@ -35,21 +72,19 @@
     box-sizing: border-box;
    }
 
-
-html,
-body {
-/*    padding: 0;
-   margin: 0; */
+html {
+   font-size:62.5%;
+   
    min-width:375px;
-  /*   font-size:62.5%; */
-   /* line-height: 1.6;
-   font-size: 18px; */
-   background-color: blue;
+ }
+
+body {
+   background-color:var(--color-grey-light);
 }
 
 
 a {
-   color: #0070f3;
+  
    text-decoration: none;
 }
 
