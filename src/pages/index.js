@@ -1,11 +1,9 @@
-import Link from 'next/link';
-import Head from 'next/head';
 import Layout from '@components/Layout';
-import Navigation from '@components/Navigation'
-import styles from './Index.module.css';
+import styles from './index.module.css';
 import MainHeader from '@components/Main-header';
+import Decouverte from '@components/Decouverte';
 
-const HomePage = (props) => {
+const HomePage = () => {
 
   const pageMeta = {
     title: 'Alexandre Charlier développeur web, react angular next redux',
@@ -15,17 +13,12 @@ const HomePage = (props) => {
        url: `${SITE_DOMAIN}/about`,*/
   };
 
-
   return (
-
+   
     <Layout pageMeta={pageMeta}>
       <div className={styles["main-container"]}>
-      <MainHeader />
-       {/*  <div class="main-header">
-          <h1 class="main-header__title">Réaliser un site internet </h1>
-          <p class="main-header__text">En quelques minutes ou un peu plus...</p>
-          <a class="main-header__link" href="#decouvrir">Visiter</a>
-        </div> */}
+      <MainHeader page="home" img='/images/arch_1900x1200.jpg'/>
+      <Decouverte />
         {/* <div class="main-center" id="decouvrir">
           <div class="main-center__header">
             <div class="main-center__header-border"></div>
