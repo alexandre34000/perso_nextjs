@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Pinyon Script&family=Miss Fajardose&family=Shrikhand&family=Montserrat&family=Mea+Culpa&family=Imperial+Script&display=swap");
+
 :root {
    /* colors */
    --color-gray: #444;
@@ -19,7 +21,7 @@
 
  
    /* typography */
-   --color-text-base: var(--color-gray);
+  /*  --color-text-base: var(--color-gray);
    --color-text-heading: var(--color-black);
    --font-family-heading: Pacaembu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -30,7 +32,7 @@
    --font-size-base: 18px;
    --font-weight-base: 400;
    --line-height-base: 1.45;
-   --line-height-heading: 1.1;
+   --line-height-heading: 1.1; */
 
 
    /* breaks points*/
@@ -42,11 +44,19 @@
 
 
     /*--font-familly--*/
---font-title :'shrikhand';
---font-texte :'roboto';
+
+/* --font-texte :'roboto';
 --font-oblique : 'Pinyon Script';
 --font-alex :'Parisienne';
---font-logo: 'Miss Fajardose';
+--font-Montserrat: 'Montserrat';
+--font-Meaculpa: 'Mea Culpa'; */
+
+--font-nav:"Times New Roman";
+--font-logo: "Imperial Script";
+
+--font-title-mainheader :'Times New Roman';
+--font-subtitle-mainheader:"Times New Roman";
+
 
 /*--font--*/
 --font-exsm: 1.5rem;
@@ -59,6 +69,9 @@
 --font-exbig: 5rem;
 
 --font-sm: 16px;
+/* helpers*/
+--nb-or:1.618;
+
 
  }
 
@@ -89,7 +102,7 @@ html {
 
 
 body {
-   background-color:var(--color-grey-light);
+   background-color:var(--color-white);
 }
 
 
@@ -112,5 +125,10 @@ ul, li{ list-style: none;}
 img {
    max-width: 100%;
    display: block;
+}
+
+h1{
+/*    font-family: var(--font-texte), sans-serif; */
+   font-weight: 500;
 }
 

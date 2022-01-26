@@ -14,7 +14,10 @@ const  Commencer =() =>{
       
       <Layout  pageMeta={pageMeta}>
 <div>page templtes</div>
-          
+<div>page templtes</div>
+<div>page templtes</div>
+<div>page templtes</div>
+<div>page templtes</div>
      </Layout>
 
      );

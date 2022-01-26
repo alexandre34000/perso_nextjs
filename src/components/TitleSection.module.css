@@ -1,0 +1,18 @@
+.first-parts__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 10px 0;
+}
+
+.first-parts__header-border{
+    width: 30%;
+    height: 2px;
+    border-bottom: 1px solid black;
+}
+.first-parts__header-title{
+    font-style: italic;
+    font-size: 4rem;
+    font-family: "Pinyon Script";
+}
