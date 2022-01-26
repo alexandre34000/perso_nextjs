@@ -21,7 +21,8 @@ const MainHeader = (props) => {
                 </div>
                 <div className={styles["main-header__constainer-text"]}>
                     <p className={styles["main-header__text"]}>En quelques minutes ou un peu plus...</p>
-                </div></div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -76,6 +76,18 @@ html {
    min-width:375px;
  }
 
+ @media screen and (min-width: 690px) {
+    html{font-size: 75%;}
+ }
+
+ @media screen and (min-width: 960px){
+   html{font-size: 85%;}
+ }
+ @media screen and (min-width: 1080px){
+   html{font-size: 100%;}
+ }
+
+
 body {
    background-color:var(--color-grey-light);
 }
