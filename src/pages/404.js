@@ -1,6 +1,7 @@
-import Header404 from '@components/Header404';
-import { SITE_DOMAIN } from '@util/constants';
-import Layout from '@components/Layout';
+import Header404 from '../components/Header404';
+import { SITE_DOMAIN } from '../util/constants';
+import Layout from '../components/Layout';
+import styles from './404.module.css';
 
 const page404 = () => {
   const pageMeta = {
@@ -11,7 +12,9 @@ const page404 = () => {
 
   return (
     <Layout  pageMeta={pageMeta}>
+    <div className={styles["main-container"]}>
       <Header404 />
+      </div>
     </Layout>
   );
 };

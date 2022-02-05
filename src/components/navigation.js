@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './Navigation.module.css';
 import { useEffect, useState, useContext } from 'react';
-import { useAppContext } from '@context/scrollState';
+import { useAppContext } from '../context/scrollState';
 
 const Navigation = (props) => {
 
@@ -28,8 +28,7 @@ const Navigation = (props) => {
             <li className={styles["entete__list-item"]}><Link href="/realiser"><a className={styles["link-header"]} >Réaliser</a></Link></li>
           </ul>
         </nav>
-        <div className={styles["entete-replace"]}>
-        </div>
+        <div className={styles["entete-replace"]}></div>
         <div className={styles["entete-center"]} >
           <Link href="/"><a className={styles["entete-center__logo"]}>AC</a></Link>
         </div>
@@ -48,7 +47,7 @@ const Navigation = (props) => {
           </div>
         </div>
       </div>
-    </header >
+    </header>
   )
 }
 

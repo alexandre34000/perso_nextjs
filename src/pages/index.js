@@ -1,9 +1,9 @@
-import Layout from '@components/Layout';
+import Layout from '../components/Layout';
 import styles from './index.module.css';
-import MainHeader from '@components/Main-header';
-import Decouverte from '@components/Decouverte';
+import MainHeader from '../components/Main-header';
+import Decouverte from '../components/Cards-home';
 import { getStaticProps } from './first';
-import TitleSection from '@components/TitleSection';
+import TitleSection from '../components/TitleSection';
 
 const HomePage = () => {
 
@@ -17,7 +17,7 @@ const HomePage = () => {
 
   const dataMainHeader = {
     page: 'home',
-    img: '/images/arch_1900x1200.jpg',
+    img: '/images/Page-home/arch_1900x1200.jpg',
     title: "Réaliser un site internet",
     subtitle: "En quelques minutes ou un peu plus..."
   }
@@ -26,20 +26,20 @@ const HomePage = () => {
     {
       title: 'Bien Commencer',
       button: 'Entrée',
-      img: './images/cards/duji-1-1667x2500.jfif',
-      page: '/commencer'
+      img: './images/cards/duji-1-380x570.jpg',
+      href: '/commencer'
     },
     {
       title: 'Tour du monde',
       button: 'En route',
-      img: './images/cards/globe.jpg',
-      page: '/templates'
+      img: './images/cards/fantasy-360x570.jpg',
+      href: '/templates'
     },
     {
       title: 'Réaliser',
       button: 'Visiter',
-      img: './images/cards/theatre.jpg',
-      page: '/realiser'
+      img: './images/cards/music-350x570.jpg',
+      href: '/realiser'
     }
   ]
 
@@ -56,7 +56,6 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-
         <div className={styles["container-second-parts"]}>
           <div className={styles["content-second-parts"]}>
             <span className={styles["second-parts__title"]}>"Les détails ne sont pas des détails, ils font la conception d'un

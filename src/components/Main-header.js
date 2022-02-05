@@ -1,5 +1,5 @@
 import styles from './Main-header.module.css';
-import { useAppContext } from '@context/scrollState';
+import { useAppContext } from '../context/scrollState';
 
 const MainHeader = (props) => {
 

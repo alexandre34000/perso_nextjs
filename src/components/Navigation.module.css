@@ -5,7 +5,7 @@
   position: fixed;
   width: 100%;
   grid-template-columns: 40% 20% 20% 20%;
-  grid-template-rows: 5.5rem 5px auto 90vh;
+  grid-template-rows: 5.5rem 5px auto auto;
   z-index: 5;
   transition: transform 0.4s;
 }
@@ -37,6 +37,7 @@
 }
 
 .entete-left__desktop {
+  display:none;
   grid-column: 1 / span 4;
   grid-row: 3;
   transform: translateY(-600px);
@@ -44,6 +45,7 @@
 }
 
 .entete-left__desktop[data-open="true"] {
+  display:initial;
   animation: translateLeft 800ms ease-in-out forwards;
 }
 
@@ -74,13 +76,16 @@
 }
 
 .entete-right__desktop {
+  display:none;
   grid-column: 1 / span 4;
   grid-row: 4;
   width: 100%;
-  transform: translate(600px);
+  height:80vh;
+  transform: translate(-600px);
 }
 
 .entete-right__desktop[data-open="true"] {
+  display: initial;
   animation: translateLeft 800ms ease-in-out forwards;
 }
 
@@ -200,6 +205,7 @@
   }
 
   .entete-left__desktop {
+    display: initial;
     grid-row: 1;
     grid-column: 1;
     line-height: 4rem;
@@ -219,6 +225,8 @@
   }
 
   .entete-right__desktop {
+    height: 100%;
+    display:initial;
     grid-column: 4;
     grid-row: 1;
     width: 100%;

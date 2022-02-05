@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { SITE_DOMAIN } from '@util/constants';
+import { SITE_DOMAIN } from '../util/constants';
 
 export default function SEO({
   title = 'Alexandre Charlier',

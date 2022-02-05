@@ -1,4 +1,6 @@
-import Layout from '@components/Layout';
+import Layout from '../components/Layout';
+import Maintenance from '../components/Maintenance';
+import TitleSection from '../components/TitleSection';
 
 const  Login =() =>{
     const pageMeta = {

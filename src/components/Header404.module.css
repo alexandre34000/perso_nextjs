@@ -1,4 +1,4 @@
-.container {
+/* .container {
     min-height: 80vh;
     position: relative;
   }
@@ -25,4 +25,33 @@
     align-items: center;
     position: relative;
     z-index: 0;
-  }
+  } */
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    
+    background-image: url(/images/Page-404/cosmos1900x1200.jpg);
+background-size: cover;
+}
+.content{
+  text-align: center; 
+}
+.title{
+  color: var(--color-white);
+  font-size: 10rem;
+}
+.text{
+  color: var(--color-white);
+  font-size:4rem;
+}
+.btnprimary{
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  font-size: 1.3rem;
+  cursor:pointer;
+}

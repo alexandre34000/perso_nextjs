@@ -1,0 +1,35 @@
+.container-scrolltop {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 18px;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.scroll-top {
+    position: relative;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    border: 5px solid var(--color-grey-dark-light);
+
+}
+
+.container-scrolltop[data-visible="true"] {
+    display: block;
+    opacity: 0.7;
+    animation: fadeInFromNone 0.4s ease-out;
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 0.7;
+    }
+}

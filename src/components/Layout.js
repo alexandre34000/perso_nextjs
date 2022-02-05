@@ -1,6 +1,7 @@
-import SEO from '@components/SEO';
-import Navigation from '@components/Navigation';
+import SEO from '../components/SEO';
+import Navigation from '../components/Navigation';
 import styles from './Layout.module.css';
+import ScrollUp from './ScrollUp';
 
 export default function Layout({ children, pageMeta }) {
 
@@ -15,6 +16,7 @@ export default function Layout({ children, pageMeta }) {
       />
       <Navigation />
       <main>{children}</main>
+      <ScrollUp />
      {/*  <Footer className={styles.footer} /> */}
     </div>
   );
