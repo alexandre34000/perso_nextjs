@@ -1,7 +1,7 @@
-import SEO from '../components/SEO';
-import Navigation from '../components/Navigation';
+import SEO from './SEO.js';
+import Navigation from './navigation.js';
 import styles from './Layout.module.css';
-import ScrollUp from './ScrollUp';
+import ScrollUp from './ScrollUp.js';
 
 export default function Layout({ children, pageMeta }) {
 

@@ -1,7 +1,7 @@
 import Header404 from '../components/Header404';
 import { SITE_DOMAIN } from '../util/constants';
 import Layout from '../components/Layout';
-import styles from './404.module.css';
+import styles from './notFound.module.css';
 
 const page404 = () => {
   const pageMeta = {

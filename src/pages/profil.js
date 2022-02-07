@@ -15,7 +15,7 @@ const Profil = () => {
 
   const dataMainHeader = {
     page: 'Tout du monde',
-    img: '/images/Page-profil/desk1900x1200.jpg',
+    img: '/images/page-profil/desk1900x1200.jpg',
     title: "Mon profil de developpeur",
     subtitle: "Imaginer, visualiser"
   }

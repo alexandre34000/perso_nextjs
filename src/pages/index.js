@@ -17,7 +17,7 @@ const HomePage = () => {
 
   const dataMainHeader = {
     page: 'home',
-    img: '/images/Page-home/arch_1900x1200.jpg',
+    img: '/images/page-home/arch_1900x1200.jpg',
     title: "Réaliser un site internet",
     subtitle: "En quelques minutes ou un peu plus..."
   }
