@@ -6,7 +6,7 @@
     width: 100%;
     height: auto;
     padding: 0 5% 40px 5%;
-    background-color: var(--color-grey-light);
+    background-color: var(--color-background);
 }
 
 .first-parts__main {
@@ -99,6 +99,8 @@
 
 @media screen and (min-width:760px) {
     .first-parts__main {
-        height: 630px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
 }

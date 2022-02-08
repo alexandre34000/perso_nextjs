@@ -1,9 +1,12 @@
 import Layout from '../components/Layout';
 import styles from './index.module.css';
 import MainHeader from '../components/Main-header';
-import Decouverte from '../components/Cards-home';
+import Cards from '../components/Cards-home';
 import { getStaticProps } from './first';
 import TitleSection from '../components/TitleSection';
+import { useState, useEffect } from 'react';
+import { useAppContext } from '../context/scrollState';
+import { dataCards } from '../i18n/dataCards';
 
 const HomePage = () => {
 
@@ -22,26 +25,33 @@ const HomePage = () => {
     subtitle: "En quelques minutes ou un peu plus..."
   }
 
-  const dataCards = [
-    {
-      title: 'Bien Commencer',
-      button: 'Entrée',
-      img: './images/cards/duji-1-380x570.jpg',
-      href: '/commencer'
-    },
-    {
-      title: 'Tour du monde',
-      button: 'En route',
-      img: './images/cards/fantasy-360x570.jpg',
-      href: '/templates'
-    },
-    {
-      title: 'Réaliser',
-      button: 'Visiter',
-      img: './images/cards/music-350x570.jpg',
-      href: '/realiser'
+  const [data, setData] = useState([dataCards]);
+  const headerHeight = 750;
+
+  const { valueY } = useAppContext();
+  const [posY, setPosY] = valueY;
+
+  const reveal = (arg) => {
+    let array = [...data]
+    array[0][arg].reveal = "true";
+    setData(array)
+  }
+
+  useEffect(() => {
+    const posBottom = (window.screen.height + posY);
+    if ((posBottom > headerHeight)) {
+      if (posBottom > (headerHeight + 300) && (posBottom < (headerHeight + 650)) && data[0][0].reveal === "false") {
+        reveal(0);
+      }
+      else if (posBottom > (headerHeight + 700) && (posBottom < (headerHeight + 1100)) && data[0][1].reveal === "false") {
+        reveal(1)
+      }
+      else if ((posBottom > (headerHeight + 1100)) && (data[0][2].reveal === "false")) {
+        reveal(2)
+      }
     }
-  ]
+  }, [posY])
+
 
   return (
 
@@ -52,7 +62,7 @@ const HomePage = () => {
           <div className={styles["content-first-parts"]} id="decouvrir">
             <TitleSection title="Découvrir" />
             <div className={styles["first-parts__main"]}>
-              {dataCards.map((card, i) => <Decouverte key={i} dataCards={card} />)}
+              {dataCards.map((card, i) => <Cards key={i} dataCards={card} />)}
             </div>
           </div>
         </div>
