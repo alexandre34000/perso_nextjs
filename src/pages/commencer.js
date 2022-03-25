@@ -14,9 +14,12 @@ const  Commencer =() =>{
         };
         const dataMainHeader = {
           page: 'commencer',
-          img: '/images/Page-decouverte/librairie_1900x1200.jpg',
+          img: 'url(/images/Page-decouverte/librairie_1900x1200.jpg)',
           title: "Bien débuter",
-          subtitle: "Tout ce qu'il faut savoir"
+          subtitle: "Tout ce qu'il faut savoir",
+          color: '#FFFFFF',
+          barColor: '#FFFFFF',
+          displayTitle: true
         }
 
     return (

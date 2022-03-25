@@ -14,9 +14,12 @@ const Realiser = () => {
   };
   const dataMainHeader = {
     page: 'Réaliser',
-    img: '/images/Page-realiser/music-1900x1200.jpg',
+    img: 'url(/images/Page-realiser/music-1900x1200.jpg)',
     title: "Entreprendre",
-    subtitle: "je suis la et oh"
+    subtitle: "Loreum lapsum",
+    color: '#FFFFFF',
+    barColor: '#FFFFFF',
+    displayTitle: true
   }
 
   return (

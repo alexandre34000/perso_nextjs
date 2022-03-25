@@ -20,9 +20,12 @@ const HomePage = () => {
 
   const dataMainHeader = {
     page: 'home',
-    img: '/images/page-home/arch_1900x1200.jpg',
-    title: "Réaliser un site internet",
-    subtitle: "En quelques minutes ou un peu plus..."
+    img: 'url(/images/page-home/arch_1900x1200.jpg)',
+    title: 'Réaliser un site internet',
+    subtitle: 'En quelques minutes ou un peu plus...',
+    color: '#FFFFFF',
+    barColor: '#FFFFFF',
+    displayTitle: true
   }
 
   const [data, setData] = useState([dataCards]);

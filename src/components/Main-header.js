@@ -1,28 +1,39 @@
 import styles from './Main-header.module.css';
 import { useAppContext } from '../context/scrollState';
+import { useState } from 'react';
 
 const MainHeader = (props) => {
 
     const { valueY } = useAppContext();
     const [statePosY, setStatePosY] = valueY;
+    const [displayTitle, setDisplayTitle ] = useState(props.dataHeader.displayTitle)
 
     const styling = {
-        backgroundImage: "url(" + `${props.dataHeader.img}` + ")",
+       /*  backgroundImage: "url(" + `${props.dataHeader.img}` + ")", */
+       backgroundImage: props.dataHeader.img,
+        color: props.dataHeader.color,
+    }
+    const stylingBar ={
+        backgroundColor : props.dataHeader.barColor
     }
 
     return (
         <div className={styles["main-header"]} style={styling}  >
-            <div className={styles["main-header-information"]}>
+            <div className={styles["main-header-information"]} style={{display:props.displayTitle}}>
+            { props.dataHeader.displayTitle && <>
                 <div className={styles["main-header__constainer-title"]}>
                     <h1 className={styles["main-header__title"]}>{props.dataHeader.title}</h1>
                 </div>
                 <div className={styles["main-header__constainer-bar"]}>
-                    <p className={styles["main-header__bar"]}></p>
+                    <p className={styles["main-header__bar"]} style={stylingBar}></p>
                 </div>
                 <div className={styles["main-header__constainer-text"]}>
                     <p className={styles["main-header__text"]}>{props.dataHeader.subtitle}</p>
                 </div>
+                </>
+            }
             </div>
+            {props.children}
         </div>
     )
 }

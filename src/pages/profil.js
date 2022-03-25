@@ -15,9 +15,12 @@ const Profil = () => {
 
   const dataMainHeader = {
     page: 'Tout du monde',
-    img: '/images/page-profil/desk1900x1200.jpg',
+    img: 'url(/images/page-profil/desk1900x1200.jpg)',
     title: "Mon profil de developpeur",
-    subtitle: "Imaginer, visualiser"
+    subtitle: "Imaginer, visualiser",
+    color: '#000000',
+    barColor: '#000000',
+    displayTitle: true
   }
 
 

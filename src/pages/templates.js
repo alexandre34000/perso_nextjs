@@ -3,6 +3,7 @@ import MainHeader from '../components/Main-header';
 import styles from './template.module.css';
 import Maintenance from '../components/Maintenance';
 import TitleSection from '../components/TitleSection';
+import MapMonde from '../components/Map-monde';
 
 const  Templates =() =>{
     const pageMeta = {
@@ -13,19 +14,26 @@ const  Templates =() =>{
           url: `${SITE_DOMAIN}/about`,*/
         };
         const dataMainHeader = {
-          page: 'Tout du monde',
-          img: '/images/Page-decouverte/librairie_1900x1200.jpg',
+          page: 'Tour du monde',
+          img: 'none',
           title: "Tout du monde des créations",
-          subtitle: "Imaginer, visualiser"
+          subtitle: "Imaginer, visualiser",
+          color: '#FFFFFF',
+          barColor: '#FFFFFF',
+          displayTitle: false
         }
 
     return (
       
       <Layout  pageMeta={pageMeta}>
       <div className={styles["main-container"]}>
-              <MainHeader dataHeader={dataMainHeader} />
+              <MainHeader dataHeader={dataMainHeader} >
+              <MapMonde />
+                </MainHeader>
+             
+              
               <TitleSection title="Tour du monde" />
-        <Maintenance />
+              <Maintenance />
               </div>
            </Layout>
 

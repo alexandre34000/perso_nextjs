@@ -82,9 +82,11 @@
     .container-cards[pos="left"] {
         flex-direction: row;
     }
+    .container-cards[pos="left"] .cards-mini{
+        transform: translateX(+500px); 
+    }
 
     .container-cards[pos="left"][reveal="true"] .cards-mini {
-        transform: translateX(+500px);
         opacity: 0;
         animation: transxright 1s ease-in-out 1s normal forwards;
     }
@@ -92,9 +94,11 @@
     .container-cards[pos="right"] {
         flex-direction: row-reverse;
     }
+    .container-cards[pos="right"] .cards-mini{
+        transform: translateX(-1000px);
+    }
 
     .container-cards[pos="right"][reveal="true"] .cards-mini {
-        transform: translateX(-1000px);
         opacity: 0;
         animation: transxleft 1s ease-in-out 1s normal forwards;
     }
